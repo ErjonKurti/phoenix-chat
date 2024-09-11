@@ -1,0 +1,161 @@
+.login {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2c2c2ed4, #000000c0, hsla(0, 0%, 0%, 0.737)); /* Dark gradient background */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.h1-login {
+    color: #e4e4e4d4;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.login-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2c2c2edf, #000000c0, hsla(0, 3%, 6%, 0.837)); /* Dark gradient background */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.logo {
+    width: max(16vw, 170px);
+}
+
+.login-form {
+    background: linear-gradient(135deg, #2c2c2edf, #131313c0, hsla(0, 3%, 6%, 0.837)); /* Dark gradient background */
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.login-form h2 {
+    font-weight: 500;
+    color: white;
+    padding-top: 20px;
+}
+
+.form-input {
+    padding: 8px 40px 8px 10px; /* Adjust padding to make space for the icon on the right */
+    border: 1px solid #2222222e;
+    border-radius: 4px;
+    outline-color: #ac07ffc7;
+    color: white;
+    background-color: #22222243;
+    width: 100%; /* Ensure the input takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #9202be67;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #51006ab9;
+}
+
+.login-term {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    color: #808080;
+}
+
+.login-toggle {
+    font-size: 13px;
+    color: #5C5C5C;
+}
+
+.login-toggle span {
+    font-weight: 500;
+    color: #9202be;
+    cursor: pointer;
+}
+
+.login-toggle span:hover {
+    color: #9202bece;
+}
+
+.login-forgot {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ffffff44;
+    font-size: 15px;
+    pointer-events: none; /* Make sure the icon is not clickable */
+}
+
+.icon:hover {
+    color: #ffffff;
+}
+
+.password-container {
+    position: relative;
+}
+
+.eye-button {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Align with the padding-right of the input */
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #ffffff44;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.eye-button:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .div1 {
+        display: none;
+    }
+}

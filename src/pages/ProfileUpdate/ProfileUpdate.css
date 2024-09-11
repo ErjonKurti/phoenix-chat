@@ -1,0 +1,149 @@
+.profile {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c2c2ece, #000000c0, hsla(0, 0%, 4%, 0.737)); /* Dark gradient background */
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.profile-container {
+    background: linear-gradient(135deg, #2c2c2ee3, #0e0e0edc, hsla(0, 0%, 0%, 0.863));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 700px;
+    border-radius: 10px;
+    padding: 20px; /* Added padding for consistency */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.profile-pic {
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    color: white;
+}
+
+.profile form h3 {
+    font-weight: 500;
+}
+
+.profile label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.profile label img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.profile input, textarea {
+    padding: 10px;
+    min-width: 300px;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0.108);
+    color: white;
+}
+
+.profile form button {
+    border: none;
+    color: white;
+    background-color: #9903c757;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profile form button:hover {
+    border: none;
+    color: white;
+    background-color: #70009267;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* iPhone styles and responsive design */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 100px;
+    }
+
+    .profile-container {
+        min-width: 0;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .profile form {
+        padding: 20px;
+        gap: 15px; /* Slightly reduced gap for smaller screens */
+    }
+
+    .profile label img {
+        width: 30px;
+    }
+
+    .profile input, textarea {
+        min-width: 100%; /* Full width for smaller screens */
+        max-width: 100%; /* Ensure it doesn't overflow */
+    }
+}
+
+/* Further adjustments for iPhone sizes (375px and below) */
+@media (max-width: 375px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 80px;
+    }
+
+    .profile form {
+        padding: 15px;
+    }
+
+    .profile input, textarea {
+        padding: 8px; /* Smaller padding for text inputs */
+        min-width: 100%; /* Ensure full width for small screens */
+    }
+
+    .profile form button {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .profile form h3 {
+        font-size: 18px; /* Adjusted font size for headings */
+    }
+
+    .profile label img {
+        width: 25px;
+    }
+}

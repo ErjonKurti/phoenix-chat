@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img.dot {
+  width: 15px !important;
+}
+
+@media (max-width:900px) {
+  .hidden {
+    display: none;
+  }
+}
+
+body{
+  min-height: 100vh;
+  background-color: #fffdfd;
+  touch-action: manipulation;
+  /* Prevents zoom and pan actions */
+  -ms-touch-action: manipulation;
+  /* For older versions of Internet Explorer */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Disable outline globally */
+img,
+button,
+a,
+svg {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Disable tap highlight color on iOS */
+img,
+button,
+a,
+svg {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Fully transparent */
+  outline: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Remove focus outline on touch devices */
+img:focus,
+img:active,
+svg:focus,
+svg:active,
+button:focus,
+button:active,
+a:focus,
+a:active {
+  outline: none;
+  box-shadow: none;
+  background: none;
+  -webkit-user-drag: none;
+}
+
+/* Prevent text selection */
+img,
+svg {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Disable text selection and tap highlight on mobile devices */
+p{
+  /* Prevent text selection */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.453);
+}
+
+img,
+button,
+a,
+svg {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (pointer: coarse) {
+  img,
+  svg,
+  button,
+  a {
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}

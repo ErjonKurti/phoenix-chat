@@ -1,0 +1,98 @@
+/* Base Styles for Dark Mode */
+.rs {
+    color: #e0e0e0; /* Light text color for readability */
+    background: #1c1c1e; /* Dark background for dark mode */
+    position: relative;
+    height: 75vh;
+    overflow-y: scroll;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Slightly stronger shadow for depth */
+}
+
+.rs-profile {
+    padding-top: 60px;
+    text-align: center;
+    max-width: 80%; /* Increased width for better visibility */
+    margin: auto;
+}
+
+.rs-profile img {
+    width: 120px; /* Slightly larger profile image */
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.rs-profile h3 {
+    font-size: 20px; /* Larger font size for better readability */
+    font-weight: 500; /* Slightly bolder font weight */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.rs-profile p {
+    font-size: 12px; /* Slightly larger font size */
+    opacity: 0.9; /* Slightly less opacity for better readability */
+    font-weight: 300;
+}
+
+.rs hr {
+    border-color: #333; /* Darker border color for separation */
+    margin: 15px 0;
+}
+
+.rs-media {
+    padding: 0 20px;
+    font-size: 14px; /* Larger font size */
+}
+
+.rs-media div {
+    max-height: 200px; /* Increased height for media container */
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjusted for better layout */
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.rs-media div img {
+    width: 80px; /* Larger media images */
+    border-radius: 8px; /* Rounded corners for media images */
+    cursor: pointer;
+    padding: 5px;
+}
+
+.rs button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c2c2e; /* Darker background for button */
+    color: #e0e0e0; /* Light text color */
+    border: none;
+    font-size: 14px; /* Slightly larger font size */
+    font-weight: 400; /* Slightly bolder font weight */
+    padding: 12px 70px; /* Adjusted padding for better appearance */
+    border-radius: 25px; /* More rounded button */
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+.rs button:hover {
+    background: #3a3a3c; /* Slightly lighter background on hover */
+}
+
+@media (max-width: 900px) {
+    .rs {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .rs {
+        height: 100vh;
+    }
+}
